@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título del Documento -->
+  <title>Héctor Daniel Ayarachi Fuentes - Currículum Vitae</title>
+
+  <!-- Metadatos Esenciales -->
+  <meta name="description" content="Currículum Vitae de Héctor Daniel Ayarachi Fuentes, Técnico Superior en Gestión de Recursos Humanos y Programador autodidacta. Experiencia en administración, asesoría comercial y desarrollo de talento.">
+  <meta name="keywords" content="CV, Curriculum Vitae, Hector Daniel Ayarachi Fuentes, Recursos Humanos, RRHH, Gestión de Talento, Programador, Neuquén, Argentina">
+  <meta name="author" content="Héctor Daniel Ayarachi Fuentes">
+  
+  <!-- Metadatos Open Graph (para Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Héctor Daniel Ayarachi Fuentes - CV Profesional">
+  <meta property="og:description" content="Conoce la trayectoria y habilidades de Héctor Daniel Ayarachi Fuentes, especialista en Recursos Humanos y desarrollo de software.">
+  <meta property="og:image" content="https://hectordanielayarachifuentes.github.io/cv-boostrap/img/h.png"> <!-- ¡¡¡REEMPLAZA ESTA URL!!! -->
+  <meta property="og:url" content="https://URL_DE_TU_CV_SI_ESTA_ONLINE.html"> <!-- Opcional: si tu CV está en una web -->
+  <meta property="og:type" content="profile">
+  <meta property="profile:first_name" content="Héctor Daniel">
+  <meta property="profile:last_name" content="Ayarachi Fuentes">
+  
+  <!-- Metadatos Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Héctor Daniel Ayarachi Fuentes - CV Profesional">
+  <meta name="twitter:description" content="Conoce la trayectoria y habilidades de Héctor Daniel Ayarachi Fuentes, especialista en Recursos Humanos y desarrollo de software.">
+  <meta name="twitter:image" content="https://URL_DE_TU_IMAGEN_DE_VISTA_PREVIA.jpg"> <!-- ¡¡¡REEMPLAZA ESTA URL!!! -->
+  <!-- <meta name="twitter:site" content="@tuUsuarioTwitter"> Si tienes un usuario de Twitter relevante -->
+
+  <!-- Favicon (opcional pero recomendado) -->
+  <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+  <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+
+  <!-- CSS externos (CDN) -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://www.rugstudio.com/Shared/Themes/RugStudio2015/css/deputy.css'>
+  
+  <!-- Estilos CSS Integrados -->
+  <style>
+    /* ... (Estilos CSS sin cambios, igual que en la versión anterior) ... */
+    .cv {
+      border: 1px solid #000;
+      box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+    }
+
+    .avatar {
+      background: #ffffff;
+      background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+      background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+      background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #454545 50%, #454545 100%);
+      filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#454545', GradientType=0);
+      height: 300px;
+      text-align: center;
+    }
+
+    .avatar img {
+      padding: 5px;
+      border-radius: 50%;
+      margin-top: 25px;
+      background: #fff;
+      max-width:250px;
+      height: auto; /* Para mantener la proporción */
+    }
+
+    .gray {
+      background: #454545;
+    }
+
+    .bio {
+      background: #454545;
+      color: #fff;
+    }
+    .bio .center h2, .bio .center .signature-lines {
+        font-size: 1.2em;
+        margin-top: 5px;
+    }
+    .bio .center .signature-lines p {
+        margin-bottom: 2px;
+        font-size: 0.9em;
+    }
+
+
+    .bio hr {
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    }
+
+    .about h3,
+    .contact h3,
+    .farewell-section h3 {
+      background-color: #4886a5;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+      color: #fff;
+      font-size: 1.4em;
+      margin: 0 0 24px 26px;
+      padding: 4px 0 4px 12px;
+      position: relative;
+      width: 100%;
+    }
+
+    .about h3:after,
+    .contact h3:after,
+    .farewell-section h3:after {
+      border-color: #263746 transparent transparent #263746;
+      border-style: solid;
+      border-width: 6px;
+      bottom: -12px;
+      content: "";
+      position: absolute;
+      right: 0;
+    }
+
+    .about h3:before,
+    .contact h3:before,
+    .farewell-section h3:before {
+      color: #fff;
+      content: "";
+      font: 26px sans-serif;
+      position: absolute;
+      right: 12px;
+      top: -2px;
+    }
+
+    .contact, .personal-data-item {
+      font-size: 1.1em;
+    }
+    .personal-data-item .glyphicon {
+        margin-right: 8px;
+    }
+
+    .circle {
+      padding: 10px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+
+    .experience .glyphicon,
+    .education .glyphicon,
+    .work-skills .glyphicon, 
+    .personal-skills .glyphicon, 
+    .skills-section .glyphicon, 
+    .farewell-section .glyphicon {
+      font-size: 1.5em;
+      margin-right: 5px;
+    }
+    .section-title-icon .h3 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    .experience hr,
+    .education hr,
+    .skills-section hr, 
+    .farewell-section hr {
+      border-top: 1px dashed #000;
+    }
+
+    .experience .date,
+    .education .date {
+      font-size: 1em;
+    }
+
+    .experience .title,
+    .education .title {
+      color: #4886a5;
+      font-weight: bold;
+    }
+
+    .skills-section .h3 {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .skills-list {
+        padding-left: 0;
+        list-style: none;
+    }
+    .skills-list li {
+        padding: 5px 0;
+        font-size: 1.1em;
+    }
+
+    body {
+      padding: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+    .mobile-no-pad {
+      padding-left:0!important;
+      padding-right:0!important;
+    }
+      body {padding: 0;}
+      
+      .about h3,
+    .contact h3,
+    .farewell-section h3 {
+      margin: 0 0 10px 0;
+      padding: 4px 0 4px 12px;
+    }
+      .about h3:after,
+    .contact h3:after,
+    .farewell-section h3:after {
+      display:none;
+    }
+      
+    .about h3:before,
+    .contact h3:before,
+    .farewell-section h3:before {
+      right: 0;
+      top: -2px;
+    }
+    }
+  </style>
+</head>
+<body>
+<div class="container cv pad-t-40 no-pad-lr">
+  <!-- Columna Izquierda -->
+  <div class="col-md-4 matchHeight no-pad-lr gray"> 
+    <div class="col-md-12 avatar">
+      <img src="https://github.com/HectorDanielAyarachiFuentes/HectorDanielAyarachiFuentes/blob/main/DULCE.jpg?raw=true" alt="Foto de Héctor Daniel Ayarachi Fuentes">
+    </div>
+    <div class="col-md-12 bio pad-b-20">
+      <div class="center">
+        <h1 class="name">Héctor Daniel Ayarachi Fuentes</h1>
+        <hr>
+        <h2>Técnico Superior en Gestión de Recursos Humanos</h2>
+        <div class="signature-lines">
+            <p>Lic. RRHH "⏳ 📚 ➡️ 1️⃣" 🚀</p>
+            <p>Programador autodidacta 🚀</p>
+        </div>
+      </div>
+      <div class="about m-t-50">
+        <h3>Sobre mí 🧑‍💻</h3>
+        <div class="pad-l-30">
+          <p>Hola, soy Hector Daniel Ayarachi Fuentes, técnico en recursos humanos con pasión por crear vínculos significativos en el trabajo.</p>
+          <p>Integro eficacia técnica y trato humano para conectar talento con oportunidades, fomentando un crecimiento profesional y personal.</p>
+          <p>Mi enfoque va más allá de la gestión de recursos; busco cultivar una cultura donde cada persona se sienta apreciada y escuchada.</p>
+          <p>Con empatía y comprensión, contribuyo a un entorno exitoso y gratificante para todos. ¡Construyamos juntos un futuro lleno de éxitos!</p>
+        </div>
+      </div>
+      <div class="contact m-t-30">
+        <h3>Datos Personales 📄</h3>
+        <div class="pad-l-30">
+          <p class="personal-data-item"><span class="glyphicon glyphicon-user circle" aria-hidden="true"></span>Ayarachi Fuentes, Hector Daniel</p>
+          <p class="personal-data-item m-t-20">
+            <span class="glyphicon glyphicon-gift circle" aria-hidden="true"></span> 
+            30/11/1990 (<span id="edad-actual"></span> Años 🎉)
+          </p>
+          <p class="personal-data-item m-t-20"><span class="glyphicon glyphicon-heart-empty circle" aria-hidden="true"></span> Soltero (sin hijos) 💔</p>
+          <p class="personal-data-item m-t-20"><span class="glyphicon glyphicon-map-marker circle" aria-hidden="true"></span> Neuquén, Argentina 🌎</p>
+          <p class="personal-data-item m-t-20"><span class="glyphicon glyphicon-envelope circle" aria-hidden="true"></span> mp4o@hotmail.com ✉️</p>
+          <p class="personal-data-item m-t-20"><span class="glyphicon glyphicon-earphone circle" aria-hidden="true"></span> +54-299-5056-213 ☎️</p>
+          <p class="personal-data-item m-t-20"><span class="glyphicon glyphicon-link circle" aria-hidden="true"></span> <a href="https://www.linkedin.com/in/hectorayarachi" target="_blank" style="color:white;">linkedin.com/in/hectorayarachi</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Columna Izquierda -->
+  
+  <!-- Columna Derecha -->
+  <div class="col-md-8 matchHeight no-pad-r">
+    <!-- Experiencia Laboral -->
+    <div class="col-md-12 m-t-20">
+      <div class="experience">
+        <p class="section-title-icon"><span class="glyphicon glyphicon-briefcase"></span><span class="h3"> EXPERIENCIA LABORAL 💼</span></p>
+        <hr>
+        <div id="experience-section">
+          <div class="row m-b-10 experience-entry"> 
+            <div class="col-md-4">
+              <p class="date"><b>Hospital Castro Rendón</b><br><i>14/06/17 - 26/04/18</i></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Auxiliar Administrativo</p>
+              <p>Como personal mensualizado en el Hospital, destaco habilidades administrativas enfocadas en diálogo, empatía y responsabilidad. Gestioné trámites para nombramiento de enfermería, controlé depósito de maestranza y organicé agendas médicas. Coordiné consultorios médicos, aplicando aprendizajes significativos en su institución.</p>
+            </div>
+          </div>
+          <div class="row m-b-10 experience-entry"> 
+            <div class="col-md-4">
+              <p class="date"><b>MendoMotos</b><br><i>Diciembre 2018 - Septiembre 2019</i></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Asesor Comercial</p>
+              <p>En este puesto, fui responsable de atender a los clientes y asesorarlos en la compra de motocicletas, así como en la gestión de financiamiento y seguros. Logré incrementar las ventas en un 15% durante mi período y recibí elogios por mi capacidad para construir relaciones duraderas con los clientes.</p>
+            </div>
+          </div>
+          <div class="row m-b-10 experience-entry"> 
+            <div class="col-md-4">
+              <p class="date"><b>Lugares Varios</b><br><i>Actualidad</i></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Asesor Comercial</p>
+              <p>En este trabajo, me he destacado por mi capacidad para alcanzar y superar objetivos de ventas, destacando la venta de 4 motos en un solo día. Además, he implementado estrategias efectivas de marketing y fidelización de clientes, lo que ha contribuido a un aumento significativo en las ventas y la satisfacción del cliente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Experiencia Laboral -->
+    
+    <!-- Educación -->
+    <div class="col-md-12">
+      <div class="education">
+        <p class="section-title-icon"><span class="glyphicon glyphicon-education"></span><span class="h3"> EDUCACIÓN 📚</span></p>
+        <hr>
+        <div id="education-section">
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>Escuela Santa Teresa de Jesús</b></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Primaria</p>
+            </div>
+          </div>
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>Escuela Santa Teresa de Jesús</b></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Secundaria - Bachiller con orientación Humanístico</p>
+            </div>
+          </div>
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>I.P.E.T</b><br><i>Centro Este, Avenida Argentina 935, Q8300 Neuquén</i></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Terciario</p>
+            </div>
+          </div>
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>Universidad Nacional del Comahue</b></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Facultad de Derecho y Ciencias Sociales</p>
+            </div>
+          </div>
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>Centro Universitario Regional Zona Atlántica</b></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">LICENCIATURA EN GESTIÓN DE RECURSOS HUMANOS (Ciclo de Licenciatura) ⏳ Cursando ➡️ 1️⃣</p>
+            </div>
+          </div>
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>Argentina Programa</b></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Programador Web Junior</p>
+            </div>
+          </div>
+          <div class="row m-b-10 education-entry">
+            <div class="col-md-4">
+              <p class="date"><b>Argentina Programa</b></p>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <p class="title">Programador Python Junior</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Educación -->
+    
+    <!-- Habilidades -->
+    <div class="col-md-12">
+      <div class="skills-section"> 
+        <p class="section-title-icon"><span class="glyphicon glyphicon-star skills-section"></span><span class="h3"> HABILIDADES 🌟</span></p>
+        <hr>
+        <div id="skills-list-section" class="row">
+            <div class="col-md-6">
+                <ul class="skills-list">
+                    <li>🤝 Reclutamiento y selección</li>
+                    <li>📚 Capacitación y desarrollo</li>
+                    <li>⚖️ Legislación laboral</li>
+                    <li>📊 Evaluación del desempeño</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="skills-list">
+                    <li>🌟 Gestión del talento</li>
+                    <li>💼 Administración de personal</li>
+                    <li>💻 Programación: HTML, CSS, JS, PHYTON</li>
+                    <li>📎 Office: Nivel alto</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Habilidades -->
+
+    <!-- Despedida y Agradecimiento -->
+    <div class="col-md-12 m-t-30">
+        <div class="farewell-section">
+          <p class="section-title-icon"><span class="glyphicon glyphicon-send"></span><span class="h3"> DESPEDIDA Y AGRADECIMIENTO 🙏</span></p>
+          <hr>
+          <div style="padding-left: 20px; padding-right: 20px;">
+            <p>Gracias por revisar mi currículum. Estoy emocionado/a ante la oportunidad de contribuir y aprender más en el futuro. Si tienes alguna pregunta o quieres saber más, no dudes en contactarme. ¡Hasta pronto!</p>
+            <p class="text-right" style="margin-top: 20px;"><strong>Héctor Daniel Ayarachi Fuentes</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- Fin Despedida y Agradecimiento -->
+
+  </div>
+  <!-- Fin Columna Derecha -->
+</div>
+  
+<!-- Scripts JS al final del body para mejor rendimiento -->
+<!-- jQuery (necesario para Bootstrap y MatchHeight) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Bootstrap JS (opcional, pero a menudo útil con Bootstrap CSS) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- jQuery MatchHeight -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+
+<script>
+  // Script para jQuery MatchHeight
+  $(function() {
+     if (typeof $.fn.matchHeight === 'function') {
+        $('.matchHeight').matchHeight();
+     } else {
+        console.warn('jQuery MatchHeight no está cargado. Las columnas podrían no tener la misma altura.');
+     }
+  });
+
+  // Script para calcular y actualizar la edad automáticamente
+  function calcularYActualizarEdad() {
+      const fechaNacimiento = new Date(1990, 10, 30); // Meses en JavaScript son 0-indexados (0=Enero, 10=Noviembre)
+      const hoy = new Date();
+
+      let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+      const mesActual = hoy.getMonth();
+      const diaActual = hoy.getDate();
+      const mesNacimiento = fechaNacimiento.getMonth();
+      const diaNacimiento = fechaNacimiento.getDate();
+
+      // Ajustar la edad si aún no ha llegado el cumpleaños de este año
+      if (mesActual < mesNacimiento || (mesActual === mesNacimiento && diaActual < diaNacimiento)) {
+          edad--;
+      }
+
+      // Actualizar el elemento HTML con la edad calculada
+      const elementoEdad = document.getElementById('edad-actual');
+      if (elementoEdad) {
+          elementoEdad.textContent = edad;
+      }
+  }
+
+  // Ejecutar la función cuando el DOM esté completamente cargado
+  document.addEventListener('DOMContentLoaded', function() {
+      calcularYActualizarEdad();
+  });
+</script>
+</body>
+</html>
